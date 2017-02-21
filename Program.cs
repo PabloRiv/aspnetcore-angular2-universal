@@ -19,6 +19,7 @@ namespace Angular2Spa
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://*:62021")
                 .Build();
 
             host.Run();
